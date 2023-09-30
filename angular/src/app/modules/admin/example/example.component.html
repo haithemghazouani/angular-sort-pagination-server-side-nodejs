@@ -1,0 +1,61 @@
+<div class="flex flex-col flex-auto min-w-0">
+
+  <!-- Main -->
+  <div class="flex-auto p-6 sm:p-10">
+
+    <!-- CONTENT GOES HERE -->
+    <div class="h-400 min-h-400 max-h-400 border-2 border-dashed border-gray-300 rounded-2xl">
+      <!-- app.component.html -->
+      <h1>Angular mat-table server side pagination example</h1>
+      <mat-card>
+        For the complete tutorial please go through
+        <a href="https://www.angularjswiki.com/material/mat-table-pagination/"
+          >https://www.angularjswiki.com/material/mat-table-pagination/</a
+        >
+      </mat-card>
+      <h2>mat-table server side pagination</h2>
+      
+      <table mat-table [dataSource]="dataSource"
+       class="mat-elevation-z8" 
+       matSort
+  #empTbSort="matSort">
+        <ng-container [matColumnDef]="column" *ngFor="let column of displayedColumns">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header>{{ column }}</th>
+          <td mat-cell *matCellDef="let emp">
+            {{ emp[column] }}
+            <!-- Add a delete button -->
+            <button mat-icon-button color="warn" (click)="onDelete(emp.id)">Delete</button>
+          </td>
+        </ng-container>
+        
+      
+        <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
+        <tr mat-row *matRowDef="let emprow; columns: displayedColumns"></tr>
+      </table>
+      <mat-progress-bar mode="indeterminate" *ngIf="isLoading"></mat-progress-bar>
+      <mat-paginator
+        #paginator
+        [length]="totalData"
+        [pageSizeOptions]="pageSizes"
+        showFirstLastButtons
+      ></mat-paginator>
+      
+      <h1>Product List</h1>
+      <ul>
+        <li>dfg</li>
+        <li *ngFor="let product of products">
+          <strong>{{ product.nom }}</strong> - Price: {{ product.prix }} USD
+        </li>
+      </ul>
+
+      <form [formGroup]="form">
+        <label for="image">Image:</label>
+        <input type="file" id="image" (change)="onFileSelected($event)">
+        <button (click)="upload()">Upload</button>
+
+      </form>
+    </div>
+
+  </div>
+
+</div>

@@ -1,0 +1,52 @@
+[
+    {
+      "id": 1,
+      "first_name": "John",
+      "last_name": "Doe",
+      "email": "john.doe@example.com",
+      "avatar": "https://example.com/avatar1.jpg"
+    },
+    {
+      "id": 2,
+      "first_name": "Jane",
+      "last_name": "Smith",
+      "email": "jane.smith@example.com",
+      "avatar": "https://example.com/avatar2.jpg"
+    },
+    {
+      "id": 3,
+      "first_name": "Bob",
+      "last_name": "Johnson",
+      "email": "bob.johnson@example.com",
+      "avatar": "https://example.com/avatar3.jpg"
+    },
+    {
+      "id": 4,
+      "first_name": "aob",
+      "last_name": "Johnson",
+      "email": "bob.johnson@example.com",
+      "avatar": "https://example.com/avatar3.jpg"
+    },
+    {
+      "id": 5,
+      "first_name": "cob",
+      "last_name": "Johnson",
+      "email": "bob.johnson@example.com",
+      "avatar": "https://example.com/avatar3.jpg"
+    },
+    {
+      "id": 6,
+      "first_name": "dob",
+      "last_name": "Johnson",
+      "email": "bob.johnson@example.com",
+      "avatar": "https://example.com/avatar3.jpg"
+    }  ,  
+    {
+      "id": 7,
+      "first_name": "rob",
+      "last_name": "Johnson",
+      "email": "bob.johnson@example.com",
+      "avatar": "https://example.com/avatar3.jpg"
+    }
+  ]
+  
